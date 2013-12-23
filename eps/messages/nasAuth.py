@@ -10,7 +10,8 @@ def authenticationRequest(nasPd,spareHO,keyID,RAND,AUTN):
          "nasPd":nasPd,
          "keyID":keyID,
          "authenticationRAND":RAND,
-         "authenticationAUTN":AUTN
+         "authenticationAUTN":AUTN,
+         "changed":"trial"
         }
     )
             
