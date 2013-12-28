@@ -9,9 +9,8 @@ def authenticationRequest(nasPd,spareHO,keyID,RAND,AUTN):
          "spareHO":spareHO,
          "nasPd":nasPd,
          "keyID":keyID,
-         "authenticationRAND":RAND,
-         "authenticationAUTN":AUTN,
-         "changed":"trial"
+         "RAND":RAND,
+         "AUTN":AUTN,
         }
     )
             
@@ -21,7 +20,7 @@ def authenticationResponse(nasPd,RES):
         {
          "messageType": {
           "procedureCode": "authResponse",
-          "typeOfMessage": "initiatingMessage"
+          "typeOfMessage": "responseMessage"
          },
          "nasPd":nasPd,
          "authenticationResponse":RES,
