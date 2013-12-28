@@ -1,0 +1,24 @@
+nas.py (messages)
+=================
+ * Under pyEPS/eps/messages ---> nas.py has been created.
+	- In that module I created two types of messages :
+		1. authenticationRequest(nasPd,spareHO,keyID,RAND,AUTN)
+		2. authenticationResponse(nasPd,RES)
+		
+nas.py (procedures/mme)
+=======================
+ * Under pyEPS/eps/procedures/mme ---> nas.py has been created.
+ 	- In that module I handled the authentication request procedure.
+ 	- The module gets the procedure inputs checks them if any missing inputs,
+ 	after that if the parameters are correct sends it to the UE.
+ 
+ nas.py (procedures/ue)
+ ======================
+ * Under pyEPS/eps/procedures/ue ---> nas.py has been created.
+ 	- In that module I handled the authentication response procedure.
+ 	- The module gets the procedure inputs checks them if any missing inputs,
+ 	after that if the parameters are correct sends it to the MME.
+ 	
+ nas.py (procedures/tests) -------(NOT IMPLEMENTED YET!!!)
+ ==========================
+  * I will try to add this module tonight or tomorrow morning.
